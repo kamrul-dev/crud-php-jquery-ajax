@@ -1,0 +1,5 @@
+hostname: localhost
+username: root
+pass:
+database: students_crud
+database table: student_tbl

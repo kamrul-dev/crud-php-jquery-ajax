@@ -1,12 +1,13 @@
-<?php 
+<?php
+
     define("HOSTNAME", "localhost");
     define("USERNAME", "root");
-    define("PASSWORD", "");
-    define("DATABASE", "crud_student");
+    define("PASSWORD","");
+    define("DATABASE", "students_crud");
 
-    $db_connection = mysqli_connect(HOSTNAME, USERNAME, PASSWORD, DATABASE);
+    $connection = mysqli_connect(HOSTNAME, USERNAME, PASSWORD, DATABASE);
 
-    if(!$db_connection){
-        die("db connection Failed" . mysqli_connect_error($db_connection));
+    if(!$connection){
+        die("Connection Failed:" .mysqli_connect_error($connection));
     }
 ?>
